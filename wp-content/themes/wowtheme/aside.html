@@ -1,0 +1,56 @@
+
+<style>
+    .menu {
+    display: none;
+}
+
+.menu.show {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+}
+
+.toggle span {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+}
+</style>
+<div class="navbar">
+    <div class="logo">
+        <img src="images/icons-logo.png" />
+    </div>
+
+    <div class="menu">
+        <ul class="ul1">
+            <li><a href="/index.html" clas="is-actived">Home</a></li>
+            <li><a href="/pato-restorent/Menu.html">MENU</a></li>
+            <li><a href="/pato-restorent/reservation.html">RESERVATION</a></li>
+            <li><a href="/pato-restorent/gallery.html">GALLERY</a></li>
+            <li><a href="/pato-restorent/about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="icons1">
+        <i class="fa-solid fa-eye" style="color: #e1e6ef"></i>
+        <i class="fa-brands fa-facebook-f" style="color: #e8eaee"></i>
+        <i class="fa-brands fa-twitter" style="color: #ece9e9"></i>
+        <div class="toggle">
+            <span></span>
+            <span class="ppp"></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+document.querySelector('.toggle').addEventListener('click', function() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+});

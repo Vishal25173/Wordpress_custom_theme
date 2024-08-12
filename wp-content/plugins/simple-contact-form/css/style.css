@@ -1,0 +1,42 @@
+/* style.css */
+
+.scf-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.scf-form-wrapper p {
+    margin-bottom: 20px;
+}
+
+.scf-form-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.scf-form-wrapper input[type="text"],
+.scf-form-wrapper input[type="email"],
+.scf-form-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.scf-form-wrapper input[type="submit"] {
+    background-color: #e4a826;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.scf-form-wrapper input[type="submit"]:hover {
+    background-color: #45a049;
+}
